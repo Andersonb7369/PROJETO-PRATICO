@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from datetime import date
 
 
@@ -35,7 +34,7 @@ btn_cadastrar = st.button('Cadastrar',
 
 if btn_cadastrar:
     if st.session_state['sucesso']:
-        st.success('Cliente cadastrado com sucesso!', 
+        st.success('Cliente cadastrado com sucesso!',
                    icon='✔')
     else:
         st.error('Houve algum problema no cadastro', icon='❌')
